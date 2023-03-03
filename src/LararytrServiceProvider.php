@@ -3,8 +3,8 @@
 namespace Rakhasa\Lararytr;
 
 use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Rakhasa\Lararytr\Commands\LararytrCommand;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LararytrServiceProvider extends PackageServiceProvider
 {
@@ -16,10 +16,6 @@ class LararytrServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('lararytr')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_lararytr_table')
-            ->hasCommand(LararytrCommand::class);
+            ->name('lararytr');
     }
 }
