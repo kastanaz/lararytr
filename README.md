@@ -6,6 +6,16 @@ This package wrapper for Rytr API https://rytr.me.
 
 You can install the package via composer:
 
+Add git source repository to `composer.json`:
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://git.rakhasa.com/arnal/lararytr.git"
+    }
+],
+```
+Start installing the package:
 ```bash
 composer require rakhasa/lararytr
 ```
@@ -38,15 +48,52 @@ php artisan vendor:publish --tag="lararytr-views"
 
 ## Usage
 
+**Get Languages**
 ```php
-$lararytr = new Rakhasa\Lararytr();
-echo $lararytr->echoPhrase('Hello, Rakhasa!');
+$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr->getLanguages();
 ```
 
-## Testing
+**Get Tones**
+```php
+$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr->getTones();
+```
 
-```bash
-composer test
+**Get Use Cases**
+```php
+$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr->getUseCases();
+```
+
+**Get Use Detail Case**
+```php
+$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr->getUseCase('USE_CASE_ID');
+```
+
+**Generate Content**
+```php
+$payload = [
+    'languageId' => "<LANUGAGE ID>",
+    'toneId' => "<TONE ID>",
+    'useCaseId' => "<USE CASE ID>",
+    'inputContexts' => [
+        "<USE-CASE CONTEXT-INPUT KEY-LABEL>": "<VALUE>"
+    ],
+    'variations' => 1, 
+    'userId' => '<UNIQUE USER ID>',  // Usually primary user id in your database
+    'format' => 'html', 
+    'creativityLevel' => 'default'
+];
+$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr->generateContent($payload);
+```
+
+**Get Usage**
+```php
+$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr->getUsage();
 ```
 
 ## Changelog
