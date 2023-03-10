@@ -11,7 +11,7 @@ Add git source repository to `composer.json`:
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://git.rakhasa.com/arnal/lararytr.git"
+        "url": "https://git.rakhasa.com/rakhasa/lararytr.git"
     }
 ],
 ```
