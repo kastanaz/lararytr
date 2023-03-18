@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakhasa\Lararytr\Commands;
+namespace Kastanaz\Lararytr\Commands;
 
 use Illuminate\Console\Command;
 

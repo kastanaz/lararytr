@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakhasa\Lararytr\Endpoints;
+namespace Kastanaz\Lararytr\Endpoints;
 
-use Rakhasa\Lararytr\Client;
-use Rakhasa\Lararytr\Endpoints\MainEndpoint;
+use Kastanaz\Lararytr\Client;
+use Kastanaz\Lararytr\Endpoints\MainEndpoint;
 
 class GetUseCaseEndpoint extends MainEndpoint
 {

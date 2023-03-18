@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakhasa\Lararytr\Exceptions;
+namespace Kastanaz\Lararytr\Exceptions;
 
 use Exception;
 

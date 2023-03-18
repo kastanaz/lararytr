@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakhasa\Lararytr\Enums;
+namespace Kastanaz\Lararytr\Enums;
 
 enum CreativityLevelEnum: string
 {

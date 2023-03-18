@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakhasa\Lararytr;
+namespace Kastanaz\Lararytr;
 
 use Spatie\LaravelPackageTools\Package;
-use Rakhasa\Lararytr\Commands\LararytrCommand;
+use Kastanaz\Lararytr\Commands\LararytrCommand;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LararytrServiceProvider extends PackageServiceProvider

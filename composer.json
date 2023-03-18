@@ -1,17 +1,17 @@
 {
-    "name": "rakhasa/lararytr",
+    "name": "kastanaz/lararytr",
     "description": "This is my package lararytr",
     "keywords": [
-        "rakhasa",
+        "kastanaz",
         "laravel",
         "lararytr"
     ],
-    "homepage": "https://github.com/rakhasa/lararytr",
+    "homepage": "https://github.com/kastanaz/lararytr",
     "license": "MIT",
     "authors": [
         {
             "name": "Ahmat Arnal Kastana",
-            "email": "arnal@rakhasa.com",
+            "email": "ahmatarnal@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Rakhasa\\Lararytr\\": "src",
-            "Rakhasa\\Lararytr\\Database\\Factories\\": "database/factories"
+            "Kastanaz\\Lararytr\\": "src",
+            "Kastanaz\\Lararytr\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rakhasa\\Lararytr\\Tests\\": "tests"
+            "Kastanaz\\Lararytr\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rakhasa\\Lararytr\\LararytrServiceProvider"
+                "Kastanaz\\Lararytr\\LararytrServiceProvider"
             ],
             "aliases": {
-                "Lararytr": "Rakhasa\\Lararytr\\Facades\\Lararytr"
+                "Lararytr": "Kastanaz\\Lararytr\\Facades\\Lararytr"
             }
         }
     },

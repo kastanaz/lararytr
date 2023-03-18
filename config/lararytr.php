@@ -1,6 +1,6 @@
 <?php
 
-// config for Rakhasa/Lararytr
+// config for Kastanaz/Lararytr
 return [
 
 ];

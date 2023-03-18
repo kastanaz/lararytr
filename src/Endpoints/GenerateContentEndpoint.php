@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakhasa\Lararytr\Endpoints;
+namespace Kastanaz\Lararytr\Endpoints;
 
-use Rakhasa\Lararytr\Ryte;
-use Rakhasa\Lararytr\Endpoints\MainEndpoint;
+use Kastanaz\Lararytr\Ryte;
+use Kastanaz\Lararytr\Endpoints\MainEndpoint;
 
 class GenerateContentEndpoint extends MainEndpoint
 {

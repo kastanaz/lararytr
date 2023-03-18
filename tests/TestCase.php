@@ -1,10 +1,10 @@
 <?php
 
-namespace Rakhasa\Lararytr\Tests;
+namespace Kastanaz\Lararytr\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rakhasa\Lararytr\LararytrServiceProvider;
+use Kastanaz\Lararytr\LararytrServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Rakhasa\\Lararytr\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Kastanaz\\Lararytr\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

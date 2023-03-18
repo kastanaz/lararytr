@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakhasa\Lararytr\Endpoints;
+namespace Kastanaz\Lararytr\Endpoints;
 
-use Rakhasa\Lararytr\Endpoints\MainEndpoint;
+use Kastanaz\Lararytr\Endpoints\MainEndpoint;
 
 class GetUsageEndpoint extends MainEndpoint
 {

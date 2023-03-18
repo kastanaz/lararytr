@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakhasa\Lararytr\Database\Factories;
+namespace Kastanaz\Lararytr\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Rakhasa\Lararytr;
+namespace Kastanaz\Lararytr;
 
-use Rakhasa\Lararytr\Endpoints\GetTonesEndpoint;
-use Rakhasa\Lararytr\Endpoints\GetUsageEndpoint;
-use Rakhasa\Lararytr\Endpoints\GetUseCaseEndpoint;
-use Rakhasa\Lararytr\Endpoints\GetUseCasesEndpoint;
-use Rakhasa\Lararytr\Endpoints\GetLanguagesEndpoint;
-use Rakhasa\Lararytr\Endpoints\GenerateContentEndpoint;
+use Kastanaz\Lararytr\Endpoints\GetTonesEndpoint;
+use Kastanaz\Lararytr\Endpoints\GetUsageEndpoint;
+use Kastanaz\Lararytr\Endpoints\GetUseCaseEndpoint;
+use Kastanaz\Lararytr\Endpoints\GetUseCasesEndpoint;
+use Kastanaz\Lararytr\Endpoints\GetLanguagesEndpoint;
+use Kastanaz\Lararytr\Endpoints\GenerateContentEndpoint;
 
 class Lararytr
 {

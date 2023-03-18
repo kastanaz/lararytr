@@ -11,13 +11,13 @@ Add git source repository to `composer.json`:
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://git.rakhasa.com/rakhasa/lararytr.git"
+        "url": "https://github.com/kastanaz/lararytr.git"
     }
 ],
 ```
 Start installing the package:
 ```bash
-composer require rakhasa/lararytr
+composer require kastanaz/lararytr
 ```
 
 You can publish and run the migrations with:
@@ -50,25 +50,25 @@ php artisan vendor:publish --tag="lararytr-views"
 
 **Get Languages**
 ```php
-$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr = new Kastanaz\Lararytr\Lararytr(config('services.rytr.api_key'));
 $lararytr->getLanguages();
 ```
 
 **Get Tones**
 ```php
-$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr = new Kastanaz\Lararytr\Lararytr(config('services.rytr.api_key'));
 $lararytr->getTones();
 ```
 
 **Get Use Cases**
 ```php
-$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr = new Kastanaz\Lararytr\Lararytr(config('services.rytr.api_key'));
 $lararytr->getUseCases();
 ```
 
 **Get Use Detail Case**
 ```php
-$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr = new Kastanaz\Lararytr\Lararytr(config('services.rytr.api_key'));
 $lararytr->getUseCase('USE_CASE_ID');
 ```
 
@@ -86,13 +86,13 @@ $payload = [
     'format' => 'html', 
     'creativityLevel' => 'default'
 ];
-$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr = new Kastanaz\Lararytr\Lararytr(config('services.rytr.api_key'));
 $lararytr->generateContent($payload);
 ```
 
 **Get Usage**
 ```php
-$lararytr = new Rakhasa\Lararytr\Lararytr(config('services.rytr.api_key'));
+$lararytr = new Kastanaz\Lararytr\Lararytr(config('services.rytr.api_key'));
 $lararytr->getUsage();
 ```
 

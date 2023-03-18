@@ -1,10 +1,10 @@
 <?php
 
-namespace Rakhasa\Lararytr\Endpoints;
+namespace Kastanaz\Lararytr\Endpoints;
 
-use Rakhasa\Lararytr\Client;
+use Kastanaz\Lararytr\Client;
 use Illuminate\Http\Client\Response;
-use Rakhasa\Lararytr\Exceptions\RytrRequestException;
+use Kastanaz\Lararytr\Exceptions\RytrRequestException;
 
 abstract class MainEndpoint
 {
